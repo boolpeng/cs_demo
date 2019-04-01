@@ -1,19 +1,13 @@
-#include "client.h"
-#include <string>
-#include<iostream>
-using namespace std;
+#include "server.h"
+#include "mySql.h"
 
-int main(int argc, char **argv)
+int main()
 {
-	client myClient;
-	string key = "ping_cap" ;
-	string vaule = "aaaaaaaaaabbbbbbbbbbccccccccccddddddddddeeeeeeeeee";
+	server myServer;
+	mySql mySql_;
 
-	myClient.Put(key, value);
-	myClient.Get(key);
-	myClient.Delete(key);
-	myClient.Scan();
+	myServer.rollback();     // 服务器重启，将mysql的数据写回。
+	myServer.loop();         // 接收请求
 
 	return 0;
-	
 }
