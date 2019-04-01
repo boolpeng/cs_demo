@@ -3,7 +3,7 @@
 
 说明：
   1. 对于kv键用C++unordered_map存储
-  2. 利用mysql实现数据持久化，即：在存储前先将lv数据写入数据库。服务器重启后，先遍历数据库将数据写回unordered_map
+  2. 利用mysql实现数据持久化，即：在存储前先将v数据写入数据库。服务器重启后，先遍历数据库将数据写回unordered_map
   3. 基本过程：
       如：1. 客户端发送put(key, value)
           2. 将 put+key+value连接成一个字符串，发送给服务器
