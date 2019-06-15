@@ -15,8 +15,10 @@
 
 
 #define MAXLINE 500
+
 using namespace std;
 
+// woai ni
 mySql mySql_;
 
 class server
