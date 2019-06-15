@@ -3,6 +3,9 @@
 #include "mySql.h"
 using namespace std;
 
+
+
+//wo shi da sha bi!
 /*构造函数主要用来封装socket 的创建，绑定与监听*/
 server::server()
 {
